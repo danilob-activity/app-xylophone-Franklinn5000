@@ -14,12 +14,11 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/red"
-        app:layout_constraintBottom_toTopOf="@+id/d_key"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/d_key"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -29,12 +28,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/orange"
-        app:layout_constraintBottom_toTopOf="@+id/e_key"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/c_key" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c_key"
+        app:layout_constraintStart_toEndOf="@+id/e_key"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/e_key"
@@ -43,12 +42,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/yellow"
-        app:layout_constraintBottom_toTopOf="@+id/f_key"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/d_key" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/d_key"
+        app:layout_constraintStart_toEndOf="@+id/f_key"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/f_key"
@@ -56,15 +55,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@color/green"
-        app:layout_constraintBottom_toTopOf="@+id/g_key"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/e_key"
 
-        />
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/e_key"
+        app:layout_constraintStart_toEndOf="@+id/g_key"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/g_key"
@@ -73,12 +71,13 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/turquoise"
-        app:layout_constraintBottom_toTopOf="@+id/a_key"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/f_key" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/f_key"
+        app:layout_constraintStart_toEndOf="@+id/a_key"
+
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
@@ -86,15 +85,15 @@
         style="@style/KeyStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
+
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/blue"
-        app:layout_constraintBottom_toTopOf="@+id/b_key"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/g_key"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/g_key"
+        app:layout_constraintStart_toEndOf="@+id/b_key"
+        app:layout_constraintTop_toTopOf="parent"
 
         />
 
@@ -106,10 +105,12 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/a_key"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/a_key" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
 
 </android.support.constraint.ConstraintLayout>
